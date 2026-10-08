@@ -1,0 +1,264 @@
+{
+  "validation": {
+    "gps_orbit_rate": -2.504557138997433e-10,
+    "geoid_rate": -6.969290134e-10,
+    "gps_vs_geoid": 4.464732995002567e-10,
+    "gps_vs_geoid_us_per_day": 38.57529307682218,
+    "gps_published": 4.4647e-10,
+    "moon_us_per_day": 56.00047846277781,
+    "moon_published_us_per_day": 56.02,
+    "mars_us_per_day": 487.79440700601464,
+    "mars_published_us_per_day": 477,
+    "mars_published_variation_us_per_day": 226
+  },
+  "oscillators": {
+    "XO": 0.0001,
+    "TCXO": 1e-06,
+    "OCXO": 1e-08,
+    "Rb": 1e-09,
+    "Cs": 1e-11
+  },
+  "configurations": [
+    {
+      "name": "Two floors, same building (10 m)",
+      "short": "Floors",
+      "d_min_m": 10.0,
+      "d_max_m": 10.0,
+      "rtt_min_s": 6.671281903963041e-08,
+      "beta_max": 0.0,
+      "delta": 1.0882082275274456e-15,
+      "delta_us_per_day": 9.40211908583713e-05,
+      "t_e_s": 0.15,
+      "delta_t_e_s": 1.6323123412911683e-16,
+      "beta_t_e_s": 0.0,
+      "causal_crossover_t_e_s": 61305196.3328846,
+      "causal_safe": true,
+      "k_max_minus_1": 1.0882082275274456e-15,
+      "doppler_share": {
+        "XO": 5.441041137637228e-12,
+        "TCXO": 5.441041137637228e-10,
+        "OCXO": 5.441041137637228e-08,
+        "Rb": 5.441041137637227e-07,
+        "Cs": 5.441041137637228e-05
+      },
+      "exposure_s": {
+        "XO": 0.0,
+        "TCXO": 0.0,
+        "OCXO": 0.0,
+        "Rb": 0.0,
+        "Cs": 0.0
+      }
+    },
+    {
+      "name": "Ground-ground (1000 km, 1 km height difference)",
+      "short": "Ground-ground",
+      "d_min_m": 1000000.0,
+      "d_max_m": 1000000.0,
+      "rtt_min_s": 0.006671281903963041,
+      "beta_max": 0.0,
+      "delta": 1.0882082274891885e-13,
+      "delta_us_per_day": 0.009402119085506588,
+      "t_e_s": 0.15,
+      "delta_t_e_s": 1.6323123412337825e-14,
+      "beta_t_e_s": 0.0,
+      "causal_crossover_t_e_s": 61305196335.03985,
+      "causal_safe": true,
+      "k_max_minus_1": 1.0882082274891885e-13,
+      "doppler_share": {
+        "XO": 5.441041137445942e-10,
+        "TCXO": 5.4410411374459426e-08,
+        "OCXO": 5.441041137445942e-06,
+        "Rb": 5.441041137445942e-05,
+        "Cs": 0.005441041137445942
+      },
+      "exposure_s": {
+        "XO": 0.0,
+        "TCXO": 0.0,
+        "OCXO": 0.0,
+        "Rb": 0.0,
+        "Cs": 0.0
+      }
+    },
+    {
+      "name": "Ground-LEO (400 km)",
+      "short": "Ground-LEO",
+      "d_min_m": 400000.0,
+      "d_max_m": 2294008.256681506,
+      "rtt_min_s": 0.0026685127615852164,
+      "beta_max": 2.25186140087706e-05,
+      "delta": -2.84541625400125e-10,
+      "delta_us_per_day": -24.5843964345708,
+      "t_e_s": 0.15,
+      "delta_t_e_s": 4.268124381001874e-11,
+      "beta_t_e_s": 3.3777921013155898e-06,
+      "causal_crossover_t_e_s": 9378286.069156772,
+      "causal_safe": true,
+      "k_max_minus_1": 2.2518898550396e-05,
+      "doppler_share": {
+        "XO": 0.11259449275197998,
+        "TCXO": 11.259449275198,
+        "OCXO": 1125.9449275197999,
+        "Rb": 11259.449275197998,
+        "Cs": 1125944.9275198
+      },
+      "exposure_s": {
+        "XO": 0.0,
+        "TCXO": 3.0778347825593994e-06,
+        "OCXO": 3.3748347825593997e-06,
+        "Rb": 3.3775347825593996e-06,
+        "Cs": 3.3778317825593996e-06
+      }
+    },
+    {
+      "name": "LEO-LEO (400 km and 550 km, crossing)",
+      "short": "LEO-LEO",
+      "d_min_m": 150000.0,
+      "d_max_m": 4999187.95803684,
+      "rtt_min_s": 0.0010006922855944561,
+      "beta_max": 5.0332899259349574e-05,
+      "delta": 2.1249667020136315e-11,
+      "delta_us_per_day": 1.8359712305397775,
+      "t_e_s": 0.1667549607948056,
+      "delta_t_e_s": 3.5434873908455045e-12,
+      "beta_t_e_s": 8.393260642681738e-06,
+      "causal_crossover_t_e_s": 47092139.591937795,
+      "causal_safe": true,
+      "k_max_minus_1": 5.033292050901659e-05,
+      "doppler_share": {
+        "XO": 0.25166460254508294,
+        "TCXO": 25.166460254508298,
+        "OCXO": 2516.6460254508297,
+        "Rb": 25166.460254508293,
+        "Cs": 2516646.02545083
+      },
+      "exposure_s": {
+        "XO": 0.0,
+        "TCXO": 8.059754264579516e-06,
+        "OCXO": 8.389929086953231e-06,
+        "Rb": 8.392930676247538e-06,
+        "Cs": 8.393260851069912e-06
+      }
+    },
+    {
+      "name": "Ground-GPS",
+      "short": "Ground-GPS",
+      "d_min_m": 20183613.4,
+      "d_max_m": 25784574.3032157,
+      "rtt_min_s": 0.13465057483200593,
+      "beta_max": 1.5514126714124055e-06,
+      "delta": 4.464732995002567e-10,
+      "delta_us_per_day": 38.57529307682218,
+      "t_e_s": 0.8600808197521667,
+      "delta_t_e_s": 3.840031214316354e-10,
+      "beta_t_e_s": 1.3343402822022805e-06,
+      "causal_crossover_t_e_s": 301587071.34944475,
+      "causal_safe": true,
+      "k_max_minus_1": 1.5518591447119057e-06,
+      "doppler_share": {
+        "XO": 0.0077592957235595285,
+        "TCXO": 0.775929572355953,
+        "OCXO": 77.59295723559528,
+        "Rb": 775.9295723559528,
+        "Cs": 77592.95723559528
+      },
+      "exposure_s": {
+        "XO": 0.0,
+        "TCXO": 0.0,
+        "OCXO": 1.3175226689286687e-06,
+        "Rb": 1.3330041236842078e-06,
+        "Cs": 1.334707083707317e-06
+      }
+    },
+    {
+      "name": "Earth-Moon",
+      "short": "Earth-Moon",
+      "d_min_m": 378021863.4,
+      "d_max_m": 384347017.4356613,
+      "rtt_min_s": 2.5218904166028087,
+      "beta_max": 1.4947051015586805e-06,
+      "delta": 6.481536859117802e-10,
+      "delta_us_per_day": 56.00047846277781,
+      "t_e_s": 12.820436511303473,
+      "delta_t_e_s": 8.30961317979931e-09,
+      "beta_t_e_s": 1.9162771857654472e-05,
+      "causal_crossover_t_e_s": 3890883399.135775,
+      "causal_safe": true,
+      "k_max_minus_1": 1.4953532552445923e-06,
+      "doppler_share": {
+        "XO": 0.007476766276222961,
+        "TCXO": 0.7476766276222961,
+        "OCXO": 74.7676627622296,
+        "Rb": 747.6766276222961,
+        "Cs": 74767.66276222962
+      },
+      "exposure_s": {
+        "XO": 0.0,
+        "TCXO": 0.0,
+        "OCXO": 1.8914672740608205e-05,
+        "Rb": 1.9145440597811667e-05,
+        "Cs": 1.9170825062104047e-05
+      }
+    },
+    {
+      "name": "Earth-Mars",
+      "short": "Earth-Mars",
+      "d_min_m": 78358129300.0,
+      "d_max_m": 377553870700.0,
+      "rtt_min_s": 522.7491700274861,
+      "beta_max": 4.653279100679465e-05,
+      "delta": 5.645768599606651e-09,
+      "delta_us_per_day": 487.79440700601464,
+      "t_e_s": 12593.841526860559,
+      "delta_t_e_s": 7.110191504077162e-05,
+      "beta_t_e_s": 0.586026595742094,
+      "causal_crossover_t_e_s": 92591320527.00615,
+      "causal_safe": true,
+      "k_max_minus_1": 4.653843677539426e-05,
+      "doppler_share": {
+        "XO": 0.2326921838769713,
+        "TCXO": 23.269218387697133,
+        "OCXO": 2326.921838769713,
+        "Rb": 23269.21838769713,
+        "Cs": 2326921.8387697134
+      },
+      "exposure_s": {
+        "XO": 0.0,
+        "TCXO": 0.5609100146034137,
+        "OCXO": 0.5858458208265976,
+        "Rb": 0.5860725099740811,
+        "Cs": 0.5860974457803043
+      }
+    }
+  ],
+  "conjecture": {
+    "random_trials": 2000,
+    "seed": 20261008,
+    "causal_inertial_worst_ratio": 1.077971782898433,
+    "twin_leader_speed": 0.8,
+    "twin_t_e": 10.0,
+    "twin_max_lease_causal": 5.999999999999999,
+    "receding": [
+      {
+        "name": "Ground-LEO",
+        "beta": 2.25e-05,
+        "k": 1.0000225002531307,
+        "max_lease_every_frame": 0.9999775002531193,
+        "max_lease_causal": 1.0000675012656535
+      },
+      {
+        "name": "Earth-Mars",
+        "beta": 4.65e-05,
+        "k": 1.0000465010811752,
+        "max_lease_every_frame": 0.9999535010810747,
+        "max_lease_causal": 1.0001395054058766
+      },
+      {
+        "name": "Fast pair",
+        "beta": 0.6,
+        "k": 2.0,
+        "max_lease_every_frame": 0.5,
+        "max_lease_causal": 5.0
+      }
+    ]
+  }
+}

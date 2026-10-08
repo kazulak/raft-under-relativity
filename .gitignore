@@ -1,1 +1,4 @@
 review/pdf/
+scratch/
+__pycache__/
+.pytest_cache/
